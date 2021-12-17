@@ -249,7 +249,7 @@ def display_data(df):
     Returns:
         None.
     """
-    
+    pd.set_option('display.max_columns', 200)
     raw_data = input("\nDo you wish to display the raw data (yes or no?").lower().strip()
 #     use index for displaying first 5 lines
     first_index = 0
