@@ -150,8 +150,7 @@ def station_stats(df):
 
     
     #     display most frequent combination of start station and end station trip
-    df['Start To End'] = df['Start Station'] + ' to ' + df['End Station']
-    start_end_station = df['Start To End'].mode()[0]
+    most_popular_trip = df.groupby(['Start Station', 'End Station']).size().idxmax()
 
     print("\nThe most frequent combination of trips are from {}.".format(start_end_station))
 
@@ -182,12 +181,12 @@ def trip_duration_stats(df):
 
     
     #     display mean travel time
-    mean_total_duration = (pd.to_datetime(df['End Time']) - pd.to_datetime(df['Start Time'])).mean()
-    day =  total_duration.days
-    hour = total_duration.seconds // (60*60)
-    minute = total_duration.seconds % (60*60) // 60
-    second = total_duration.seconds % (60*60) % 60
-    print("The total trip duration is {} hours, {} minutes and {} seconds.".format(hour, minute, second))
+    mean_trip_duration = (pd.to_datetime(df['End Time']) - pd.to_datetime(df['Start Time'])).mean()
+    day =  mean_trip_duration.days
+    hour = mean_trip_duration.seconds // (60*60)
+    minute = mean_trip_duration.seconds % (60*60) // 60
+    second = mean_trip_duration.seconds % (60*60) % 60
+    print("The mean trip duration is {} hours, {} minutes and {} seconds.".format(hour, minute, second))
 
 
     print(f"\nThis took {(time.time() - start_time)} seconds.")
@@ -249,7 +248,7 @@ def display_data(df):
     Returns:
         None.
     """
-    
+    pd.set_option('display.max_columns', 200)
     raw_data = input("\nDo you wish to display the raw data (yes or no?").lower().strip()
 #     use index for displaying first 5 lines
     first_index = 0
