@@ -1,17 +1,42 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-Include the date you created this project and README file.
+17th December, 2021
 
 ### Project Title
-Replace the Project Title
+Pandas Basic Data Exploration on Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+A Python project that uses pandas to explore data related to bike share systems for three major cities in the United States: Chicago, New York City, and Washington.
+
+This project focuses on pandas library usage and simple statistical methods to do descriptive analysis on bikeshare data from three major U.S. cities - Chicago, Washington, and New York City 
+to present information such as most popular days or most common stations.
+
+Program Specifics
+The application requires user input for the city (e.g., Chicago), month for which data is desired 
+(e.g., January; also provides a 'all' option), and day for which data is desired (e.g., Monday; also includes a 'all' option).
+After receiving user input, it proceeds to ask the user if they want to examine the raw data 
+(5 rows of data at first) or not. Following the input, the application prints the following information:
+Most popular month
+Most popular day
+Most popular hour
+Most popular start station
+Most popular end station
+Most popular combination of start and end stations
+Total trip duration
+Average trip duration
+Types of users by number
+Types of users by gender (if available)
+The oldest user (if available)
+The youngest user (if available)
+The most common birth year amongst users (if available)
+Finally, the user is prompted with the choice of restarting the program or not.
+
 
 ### Files used
-Include the files used
+chicago.csv - The chicago.csv file is the dataset containing all bikeshare information for the city of Chicago provided by Udacity.
+new_york_city.csv - Dataset containing all bikeshare information for the city of New York provided by Udacity.
+washington.csv - Dataset containing all bikeshare information for the city of Washington provided by Udacity.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Thanks [okaysidd] for sharing knowledge (https://github.com/okaysidd/bikeshare/blob/master/README.md)
 
