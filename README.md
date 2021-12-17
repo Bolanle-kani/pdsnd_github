@@ -37,7 +37,7 @@ chicago.csv - The chicago.csv file is the dataset containing all bikeshare infor
 new_york_city.csv - Dataset containing all bikeshare information for the city of New York provided by Udacity.
 washington.csv - Dataset containing all bikeshare information for the city of Washington provided by Udacity.
 
-Requirements
+### Requirements
 Language: [Python 3.6](https://docs.python.org/3/library/)
 Libraries: [pandas](https://pandas.pydata.org/pandas-docs/version/0.17.0/), [numpy](https://numpy.org/doc/), [time](https://docs.python.org/3/library/time.html)
 [Jupyter Notebook](http://jupyter.org/)
@@ -45,3 +45,6 @@ Libraries: [pandas](https://pandas.pydata.org/pandas-docs/version/0.17.0/), [num
 ### Credits
 Thanks [okaysidd] for sharing knowledge (https://github.com/okaysidd/bikeshare/blob/master/README.md)
 
+
+### Author
+Omobolanle Adeyemi
