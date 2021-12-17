@@ -182,12 +182,12 @@ def trip_duration_stats(df):
 
     
     #     display mean travel time
-    mean_total_duration = (pd.to_datetime(df['End Time']) - pd.to_datetime(df['Start Time'])).mean()
-    day =  total_duration.days
-    hour = total_duration.seconds // (60*60)
-    minute = total_duration.seconds % (60*60) // 60
-    second = total_duration.seconds % (60*60) % 60
-    print("The total trip duration is {} hours, {} minutes and {} seconds.".format(hour, minute, second))
+    mean_trip_duration = (pd.to_datetime(df['End Time']) - pd.to_datetime(df['Start Time'])).mean()
+    day =  mean_trip_duration.days
+    hour = mean_trip_duration.seconds // (60*60)
+    minute = mean_trip_duration.seconds % (60*60) // 60
+    second = mean_trip_duration.seconds % (60*60) % 60
+    print("The mean trip duration is {} hours, {} minutes and {} seconds.".format(hour, minute, second))
 
 
     print(f"\nThis took {(time.time() - start_time)} seconds.")
