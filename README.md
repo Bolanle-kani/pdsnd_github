@@ -43,7 +43,7 @@ Libraries: [pandas](https://pandas.pydata.org/pandas-docs/version/0.17.0/), [num
 [Jupyter Notebook](http://jupyter.org/)
 
 ### Credits
-Thanks [okaysidd] for sharing knowledge (https://github.com/okaysidd/bikeshare/blob/master/README.md)
+Thanks [okaysidd](https://github.com/okaysidd/bikeshare/blob/master/README.md) for sharing knowledge 
 
 
 ### Author
